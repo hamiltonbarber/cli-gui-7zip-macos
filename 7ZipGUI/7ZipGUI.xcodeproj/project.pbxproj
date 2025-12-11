@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1234567890123456789012A /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789012B /* App.swift */; };
+		A1234567890123456789012C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789012D /* ContentView.swift */; };
+		A1234567890123456789012E /* ArchiveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789012F /* ArchiveViewModel.swift */; };
+		A1234567890123456789012G /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789012H /* Assets.xcassets */; };
+		A1234567890123456789011A /* 7zz in Resources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789011B /* 7zz */; };
+		/* New files */
+		A1234567890123456789001A /* ArchiveFileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789001B /* ArchiveFileInfo.swift */; };
+		A1234567890123456789002A /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789002B /* UserPreferences.swift */; };
+		A1234567890123456789003A /* SevenZipService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789003B /* SevenZipService.swift */; };
+		A1234567890123456789004A /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789004B /* FileService.swift */; };
+		A1234567890123456789005A /* CreateArchiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789005B /* CreateArchiveView.swift */; };
+		A1234567890123456789006A /* ExtractArchiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789006B /* ExtractArchiveView.swift */; };
+		A1234567890123456789007A /* ViewArchiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789007B /* ViewArchiveView.swift */; };
+		A1234567890123456789008A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789008B /* Extensions.swift */; };
+		A1234567890123456789009A /* DragDropHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789009B /* DragDropHandler.swift */; };
+		A1234567890123456789010A /* UserPreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789010B /* UserPreferencesView.swift */; };
+		A1234567890123456789011C /* PasswordPromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789011D /* PasswordPromptView.swift */; };
+		A1234567890123456789012Z /* FileTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789012Y /* FileTreeNode.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A1234567890123456789012I /* 7-Zip GUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "7-Zip GUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1234567890123456789012B /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		A1234567890123456789012D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A1234567890123456789012F /* ArchiveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveViewModel.swift; sourceTree = "<group>"; };
+		A1234567890123456789012H /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1234567890123456789012J /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1234567890123456789011B /* 7zz */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = 7zz; sourceTree = "<group>"; };
+		/* New files */
+		A1234567890123456789001B /* ArchiveFileInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveFileInfo.swift; sourceTree = "<group>"; };
+		A1234567890123456789002B /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
+		A1234567890123456789003B /* SevenZipService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SevenZipService.swift; sourceTree = "<group>"; };
+		A1234567890123456789004B /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
+		A1234567890123456789005B /* CreateArchiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateArchiveView.swift; sourceTree = "<group>"; };
+		A1234567890123456789006B /* ExtractArchiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractArchiveView.swift; sourceTree = "<group>"; };
+		A1234567890123456789007B /* ViewArchiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewArchiveView.swift; sourceTree = "<group>"; };
+		A1234567890123456789008B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A1234567890123456789009B /* DragDropHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDropHandler.swift; sourceTree = "<group>"; };
+		A1234567890123456789010B /* UserPreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferencesView.swift; sourceTree = "<group>"; };
+		A1234567890123456789011D /* PasswordPromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordPromptView.swift; sourceTree = "<group>"; };
+		A1234567890123456789012Y /* FileTreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileTreeNode.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1234567890123456789012K /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1234567890123456789012L = {
+			isa = PBXGroup;
+			children = (
+				A1234567890123456789012M /* 7ZipGUI */,
+				A1234567890123456789012N /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1234567890123456789012M /* 7ZipGUI */ = {
+			isa = PBXGroup;
+			children = (
+				A1234567890123456789012B /* App.swift */,
+				A1234567890123456789012D /* ContentView.swift */,
+				A1234567890123456789012F /* ArchiveViewModel.swift */,
+				A123456789012345678901001 /* Models */,
+				A123456789012345678901002 /* Services */,
+				A123456789012345678901003 /* Views */,
+				A123456789012345678901004 /* Utilities */,
+				A1234567890123456789012H /* Assets.xcassets */,
+				A1234567890123456789012J /* Info.plist */,
+				A1234567890123456789011B /* 7zz */,
+			);
+			path = 7ZipGUI;
+			sourceTree = "<group>";
+		};
+		A123456789012345678901001 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1234567890123456789001B /* ArchiveFileInfo.swift */,
+				A1234567890123456789002B /* UserPreferences.swift */,
+				A1234567890123456789012Y /* FileTreeNode.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A123456789012345678901002 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A1234567890123456789003B /* SevenZipService.swift */,
+				A1234567890123456789004B /* FileService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A123456789012345678901003 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A1234567890123456789005B /* CreateArchiveView.swift */,
+				A1234567890123456789006B /* ExtractArchiveView.swift */,
+				A1234567890123456789007B /* ViewArchiveView.swift */,
+				A1234567890123456789010B /* UserPreferencesView.swift */,
+				A1234567890123456789011D /* PasswordPromptView.swift */,
+				A1234567890123456789010B /* UserPreferencesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A123456789012345678901004 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A1234567890123456789008B /* Extensions.swift */,
+				A1234567890123456789009B /* DragDropHandler.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A1234567890123456789012N /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1234567890123456789012I /* 7-Zip GUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1234567890123456789012O /* 7ZipGUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1234567890123456789012P /* Build configuration list for PBXNativeTarget "7ZipGUI" */;
+			buildPhases = (
+				A1234567890123456789012Q /* Sources */,
+				A1234567890123456789012K /* Frameworks */,
+				A1234567890123456789012R /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 7ZipGUI;
+			productName = 7ZipGUI;
+			productReference = A1234567890123456789012I /* 7-Zip GUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1234567890123456789012S /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A1234567890123456789012O = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A1234567890123456789012T /* Build configuration list for PBXProject "7ZipGUI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1234567890123456789012L;
+			productRefGroup = A1234567890123456789012N /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1234567890123456789012O /* 7ZipGUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1234567890123456789012R /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1234567890123456789012G /* Assets.xcassets in Resources */,
+				A1234567890123456789011A /* 7zz in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1234567890123456789012Q /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1234567890123456789012C /* ContentView.swift in Sources */,
+				A1234567890123456789012E /* ArchiveViewModel.swift in Sources */,
+				A1234567890123456789012A /* App.swift in Sources */,
+				A1234567890123456789001A /* ArchiveFileInfo.swift in Sources */,
+				A1234567890123456789002A /* UserPreferences.swift in Sources */,
+				A1234567890123456789003A /* SevenZipService.swift in Sources */,
+				A1234567890123456789004A /* FileService.swift in Sources */,
+				A1234567890123456789005A /* CreateArchiveView.swift in Sources */,
+				A1234567890123456789006A /* ExtractArchiveView.swift in Sources */,
+				A1234567890123456789007A /* ViewArchiveView.swift in Sources */,
+				A1234567890123456789008A /* Extensions.swift in Sources */,
+				A1234567890123456789009A /* DragDropHandler.swift in Sources */,
+				A1234567890123456789010A /* UserPreferencesView.swift in Sources */,
+				A1234567890123456789011C /* PasswordPromptView.swift in Sources */,
+				A1234567890123456789012Z /* FileTreeNode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A1234567890123456789012U /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1234567890123456789012V /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A1234567890123456789012W /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = 7ZipGUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "CLI Interface for 7-Zip";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.7zipgui.macos";
+				PRODUCT_NAME = "7-Zip GUI";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A1234567890123456789012X /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = 7ZipGUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "CLI Interface for 7-Zip";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.7zipgui.macos";
+				PRODUCT_NAME = "7-Zip GUI";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1234567890123456789012T /* Build configuration list for PBXProject "7ZipGUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1234567890123456789012U /* Debug */,
+				A1234567890123456789012V /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1234567890123456789012P /* Build configuration list for PBXNativeTarget "7ZipGUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1234567890123456789012W /* Debug */,
+				A1234567890123456789012X /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1234567890123456789012S /* Project object */;
+}

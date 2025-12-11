@@ -1,0 +1,34 @@
+# Third-Party Software Licenses
+
+This project includes software components from other projects with their own licenses:
+
+## 7-Zip
+
+**Component**: 7-Zip executable (7zz)
+**Version**: 25.01
+**Copyright**: © 1999-2025 Igor Pavlov
+**License**: LGPL 2.1+ with unRAR restriction
+**Website**: https://www.7-zip.org/
+**Source Code**: https://www.7-zip.org/
+
+### License Summary
+7-Zip is licensed under the GNU Lesser General Public License (LGPL) version 2.1 or later, with an exception for the unRAR code. This license allows the 7-Zip binary to be bundled with applications under different licenses.
+
+### LGPL 2.1+ License Text
+The full license text is available at:
+- https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
+- https://www.7-zip.org/license.txt
+
+### Technical Implementation
+This application does NOT modify, link to, or incorporate 7-Zip source code. Instead, it:
+- Bundles the unmodified 7-Zip executable for user convenience
+- Communicates with 7-Zip via subprocess calls and command-line interface
+- Maintains complete process separation between application code and 7-Zip
+- Functions as a CLI wrapper that calls 7-Zip as an external tool
+
+This approach is similar to how Git GUI clients bundle the Git executable, or how video editors bundle FFmpeg - the LGPL component remains separate and unmodified.
+
+---
+
+## No Other Third-Party Components
+All other code in this project is original and licensed under the LGPL-3.0 License (see LICENSE file).
