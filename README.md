@@ -79,5 +79,3 @@ See [LICENSE](LICENSE) and [THIRD-PARTY-LICENSES.txt](THIRD-PARTY-LICENSES.txt) 
 ## Author
 
 Hamilton Barber - [hamiltonbarber.com](https://www.hamiltonbarber.com)
-
-Support if you want, but don't feel like you need to: [PayPal](https://paypal.me/HamiltonBBarber)
