@@ -976,6 +976,15 @@ class SevenZipCLI:
             if output_ext == "7z":
                 cmd.append("-mhe=on")
         
+        # Exclude macOS metadata files
+        cmd.append("-xr!.DS_Store")       # Finder folder metadata
+        cmd.append("-xr!._*")             # AppleDouble resource forks
+        cmd.append("-xr!.AppleDouble")    # AppleDouble directories
+        cmd.append("-xr!.Spotlight-V100") # Spotlight index
+        cmd.append("-xr!.Trashes")        # Trash folder
+        cmd.append("-xr!.fseventsd")      # File system events
+        cmd.append("-xr!Thumbs.db")       # Windows thumbnail cache
+        
         cmd.append(output_path)
         cmd.extend(validated_files)
         

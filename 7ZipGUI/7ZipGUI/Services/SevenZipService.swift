@@ -155,6 +155,15 @@ class SevenZipService {
                     }
                 }
                 
+                // Exclude macOS metadata files
+                arguments.append("-xr!.DS_Store")      // Finder folder metadata
+                arguments.append("-xr!._*")            // AppleDouble resource forks
+                arguments.append("-xr!.AppleDouble")   // AppleDouble directories
+                arguments.append("-xr!.Spotlight-V100") // Spotlight index
+                arguments.append("-xr!.Trashes")       // Trash folder
+                arguments.append("-xr!.fseventsd")     // File system events
+                arguments.append("-xr!Thumbs.db")      // Windows thumbnail cache
+                
                 arguments.append(outputPath)
                 arguments.append(contentsOf: files)
                 
